@@ -6,12 +6,17 @@ const Container = styled.div`
 `
 
 class App extends Component {
+    state = {
+        name: 'rob'
+    }
+    
     render() {
-        return (
-            <Container>
-                <h1>Hello World!!</h1>
+    const { name } = this.state;
+        return <Container>
+                <h1>Hello, {name}!!</h1>
             </Container>
-        );
+        
+
     }
 }
 

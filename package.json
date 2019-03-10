@@ -6,11 +6,14 @@
   "scripts": {
     "build": "webpack --config ./public/webpack.prod.js",
     "start": "webpack-dev-server --config ./public/webpack.dev.js",
-    "test": "jest ./test"
+    "test": "jest ./test",
+    "precommit": "NODE_ENV=production lint-staged"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "babel-eslint": "^10.0.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "styled-components": "^4.1.3"
@@ -25,9 +28,21 @@
     "css-loader": "^2.1.1",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.10.0",
+    "eslint": "^5.15.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-fbjs": "^2.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
     "html-webpack-plugin": "^3.2.0",
+    "husky": "^1.3.1",
     "jest": "^24.3.1",
+    "lint-staged": "^8.1.5",
     "node-sass": "^4.11.0",
+    "prettier": "^1.16.4",
+    "pretty-quick": "^1.10.0",
     "react-test-renderer": "^16.8.4",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
