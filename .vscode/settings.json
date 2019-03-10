@@ -6,6 +6,6 @@
     "eslint.enable": true,
     "prettier.singleQuote": true,
     "[javascript]": {
-        "editor.formatOnSave": false
+        "editor.formatOnSave": true
     }
 }

@@ -15,7 +15,7 @@
     },
     "plugins": [
         "prettier",
-        "jsx-ally",
+        "jsx-a11y",
         "react"
     ],
     "settings": {

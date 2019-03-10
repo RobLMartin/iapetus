@@ -1,22 +1,26 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import AppBar from '@material-ui/core/AppBar';
 
 const Container = styled.div`
-    background-color: blue;
+   height: 100vh;
+   padding: 2em;
+`
+
+const StyledAppBar = styled(AppBar)`
+    padding-left: 1em;
 `
 
 class App extends Component {
-    state = {
-        name: 'rob'
-    }
-    
-    render() {
-    const { name } = this.state;
-        return <Container>
-                <h1>Hello, {name}!!</h1>
-            </Container>
-        
 
+    render() {
+        return (
+            <Container>
+                <StyledAppBar position="relative">
+                    <h1>Hello, World!!!</h1>
+                </StyledAppBar>
+            </Container>
+        )
     }
 }
 
