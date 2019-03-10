@@ -14,7 +14,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 exclude: [/node_modules/],
-                use: [{ loader: 'babel-loader'}]
+                use: [{ loader: 'babel-loader' }]
             },
             {
                 test: /\.s(a|c)ss$/,
@@ -37,10 +37,5 @@ module.exports = {
             template: 'index.html'
         }),
         new CleanWebpackPlugin({})
-    ],
-    devServer: {
-        host: 'localhost',
-        port: 3000, 
-        open: true
-    }
+    ]
 }
