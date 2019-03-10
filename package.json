@@ -1,13 +1,12 @@
 {
-  "name": "react-boilerplate",
+  "name": "Iapetus",
   "version": "1.0.0",
   "description": "`npm install`\r `npm start`",
   "main": "index.js",
   "scripts": {
     "build": "webpack --config ./config/webpack.prod.js",
     "start": "webpack-dev-server --config ./config/webpack.dev.js",
-    "test": "jest ./test",
-    "precommit": "NODE_ENV=production lint-staged"
+    "test": "jest ./test"
   },
   "author": "",
   "license": "ISC",
