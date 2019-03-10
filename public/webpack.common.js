@@ -3,7 +3,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 module.exports = {
     entry: {
-        main: './src/index.js',
+        main: './src/client/index.js',
     },
     output: {
         filename: '[name].[hash].js',
@@ -34,7 +34,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebPackPlugin({
-            template: 'index.html'
+            template: './src/client/index.html'
         }),
         new CleanWebpackPlugin({})
     ]
