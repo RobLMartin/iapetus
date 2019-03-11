@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Paper from "@material-ui/core/Paper";
 import AppBar from "@material-ui/core/AppBar";
 import { withStyles } from "@material-ui/core/styles";
+import NavBar from './components/Navigation/NavBar';
 
 const Container = styled.div`
     height: 100vh;
@@ -10,8 +11,8 @@ const Container = styled.div`
     grid-template-areas: 
         'sidenav appbar' 
         'sidenav canvas';
-    grid-template-columns: 50px 1fr;
-    grid-template-rows: 50px 1fr;
+    grid-template-columns: 55px 1fr;
+    grid-template-rows: 55px 1fr;
 `
 
 const SideNav = styled(AppBar)`
@@ -36,7 +37,8 @@ class App extends Component {
         const { classes } = this.props;
         return (
             <Container>
-                <SideNav color="primary" position="relative" />
+                {/* <SideNav color="primary" position="relative" /> */}
+                <NavBar></NavBar>
                 <TopBar color="inhert" position="relative" classes={{ root: classes.root }} />
                 <Canvas />
             </Container>
