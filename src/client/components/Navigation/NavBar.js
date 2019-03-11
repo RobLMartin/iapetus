@@ -31,10 +31,10 @@ class NavBar extends Component {
 
     render() {
         const { isOpen } = this.state;
-        const { classes } = this.props;
+        const { classes, navigation } = this.props;
         return <Container isOpen={isOpen} classes={{ root: classes.root }}>
             <ButtonContainer>
-                <Button onClick={this.handleOpenDrawer}>></Button>
+                <Button classes={{ root: classes.button }} onClick={this.handleOpenDrawer}></Button>
             </ButtonContainer>
         </Container>
     }
@@ -44,6 +44,11 @@ const styles = {
     root: {
         left: 0,
         zIndex: 1101
+    },
+    button: {
+        height: "55px",
+        width: "250px",
+
     }
 }
 

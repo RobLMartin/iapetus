@@ -4,6 +4,7 @@ import Paper from "@material-ui/core/Paper";
 import AppBar from "@material-ui/core/AppBar";
 import { withStyles } from "@material-ui/core/styles";
 import NavBar from './components/Navigation/NavBar';
+import Canvas from './components/Navigation/Canvas';
 
 const Container = styled.div`
     height: 100vh;
@@ -20,10 +21,6 @@ const SideNav = styled(AppBar)`
     background-color: #8862f1; 
     z-index: 10000;
      
-`
-
-const Canvas = styled.div`
-    grid-area: canvas;  
 `
 
 const TopBar = styled(AppBar)`
